@@ -1,0 +1,46 @@
+.Question {
+  list-style: none;
+  width: 80vw;
+}
+
+
+.Question-question {
+  background-color: brown;
+  font-size: 2rem;
+}
+
+
+.Question-answer {
+  background-color: aqua;
+  font-size: 1.3rem;
+}
+
+
+/* .Qustion-answer,
+.Question-question {
+  transform: translateX(-600px);
+  border-radius: 3px;
+
+} */
+
+.fly {
+  transform: translateX(-600px);
+  border-radius: 3px;
+  animation-name: fly-in;
+  animation-duration: 500ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes fly-in{
+  0% {
+    transform: translateX(-600px)
+  }
+
+  100% {
+    transform: translateX(0px)
+  }
+}

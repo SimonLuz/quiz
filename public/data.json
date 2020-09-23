@@ -1,0 +1,18 @@
+[
+  {
+    "question": "who is the best",
+    "answers": [
+      {"content":"me", "isTrue": false}, 
+      {"content": "you", "isTrue": false}, 
+      { "content": "Anna", "isTrue": true }
+    ]
+  },
+  {
+    "question": "Who do you like in tennis",
+    "answers": [
+      {"content":"Ferrer", "isTrue": false}, 
+      {"content": "Becker", "isTrue": true}, 
+      { "content": "Wilson", "isTrue": false }
+    ]
+  }
+]
