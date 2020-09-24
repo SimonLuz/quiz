@@ -1,18 +1,15 @@
 import React from 'react';
-import Notice from './Notice';
 import "./Question.css"
 
 
 function Question(props) {
-console.log(props)
   function handleClick(id, isTrue) {
-    console.log('handleClick', isTrue);
     props.checkAnswer(id, isTrue);
   }
 
   function resetGame() {
     console.log('RESET')
-    // location.reload();s
+    window.location.reload(false);
   }
 
   let answers;

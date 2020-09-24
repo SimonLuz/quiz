@@ -3,7 +3,6 @@ import './Notice.css';
 
 
 function Notice(props) {
-  console.log('NOTICE', props)
     
   let noticeText; 
     if (props.correctAnswer && !props.finish) {
@@ -17,15 +16,6 @@ function Notice(props) {
         That's not quite right
       </p>
     }
-
-    /* if (props.finish) {
-      noticeText = <p className='Notice-text'>
-        <span>Thats it!</span>
-        Your score is {props.score}
-      </p>
-    } */
-  // console.log(noticeText)
-
 
   return(
     <div className={`Notice-container ${props.show ? 'show' : '' } `} >

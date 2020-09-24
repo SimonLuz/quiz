@@ -21,10 +21,15 @@
 
 
 .Question-answer {
-  background-color: aqua;
+  background-color: rgb(149, 224, 226);
   font-size: 1.3rem;
   margin-bottom: 2px;
   padding: .5rem 1rem;
+}
+
+.Question-answer:hover {
+  cursor: pointer;
+  background-color: rgb(43, 218, 224)
 }
 
 

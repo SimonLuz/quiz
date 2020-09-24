@@ -53,7 +53,6 @@ class App extends Component {
           }
           )) 
 
-        console.log(newData)
         this.setState({
           questions: newData,
           readyToStart: true,
@@ -66,7 +65,6 @@ class App extends Component {
     let finish = this.state.counter === this.state.questions.length ? true : false;
     const currQ = this.state.questions[this.state.counter];
     let finalScore = `${this.state.score}/${this.state.questions.length}`;
-    console.log('FINISH', finish)
 
 
     if (this.state.readyToStart) {
@@ -79,7 +77,6 @@ class App extends Component {
             finish={finish}
             finalScore={finalScore}
           /> 
-        // </div>
       )
     } else { 
       start = (
