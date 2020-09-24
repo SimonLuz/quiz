@@ -1,18 +1,26 @@
 [
   {
-    "question": "who is the best",
+    "question": "What is Harry Potter's Birthday?",
     "answers": [
-      {"content":"me", "isTrue": false}, 
-      {"content": "you", "isTrue": false}, 
-      { "content": "Anna", "isTrue": true }
+      {"content":"July 31st", "isTrue": true}, 
+      {"content": "June 31st", "isTrue": false}, 
+      { "content": "October 31", "isTrue": true }
     ]
   },
   {
-    "question": "Who do you like in tennis",
+    "question": "What spell creates the flame at the end of the wand?",
     "answers": [
-      {"content":"Ferrer", "isTrue": false}, 
-      {"content": "Becker", "isTrue": true}, 
-      { "content": "Wilson", "isTrue": false }
+      {"content":"AvdaKavda", "isTrue": false}, 
+      {"content": "Lumo", "isTrue": true}, 
+      { "content": "Excalibur", "isTrue": false }
+    ]
+  },
+  {
+    "question": "What Hogwarth house is famous for its sharp, witty students?  ",
+    "answers": [
+      {"content":"Hubfflpuf", "isTrue": false}, 
+      {"content": "Slythein", "isTrue": false}, 
+      { "content": "Ravenclaw", "isTrue": true }
     ]
   }
 ]

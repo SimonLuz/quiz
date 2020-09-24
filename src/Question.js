@@ -1,4 +1,5 @@
 import React from 'react';
+import Notice from './Notice';
 import "./Question.css"
 
 
@@ -9,31 +10,43 @@ console.log(props)
     props.checkAnswer(id, isTrue);
   }
 
-  const answers = props.answers.map((el, i) => (
+  function resetGame() {
+    console.log('RESET')
+    // location.reload();s
+  }
+
+  let answers;
+  if (!props.finish) {
+    answers = props.answers.map((el, i) => (
     <li 
       className='Question-answer fly'
-      key={(i + 1) * Math.random()}
-      id={i}
+      key={el.id}
+      id={el.id}
       onClick={() => handleClick(i, el.isTrue)}
       style={{'--animation-order':` ${i + 2}`}}
       >
         {i + 1}. {el.content}
       </li>
-    )
-  )
-
+    ))
+  }
+  
+  
 
   return(
-    <ul className='Question'>
+    !props.finish ? <ul className='Question'>
       <li 
         className='Question-question fly'
         order={0} 
         style={{'--animation-order': '1'}}
-        key={Math.random()}
-        >{ props.question } 
+        key={props.question.id}
+        >{ props.question.text } 
       </li>
       { answers }
-    </ul>
+    </ul> :
+    <div className='Notice-container show' >
+      <h1>Your score is {props.finalScore}</h1>
+      <button className='reload' onClick={() => resetGame()}>Reload</button>
+  </div>
   )
  
 }
