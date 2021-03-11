@@ -61,6 +61,7 @@ class App extends Component {
   }
 
   render() {
+    let gitPractice2 = 'Variable created on Simon Laptop in App.js'
     let start;
     let finish = this.state.counter === this.state.questions.length ? true : false;
     const currQ = this.state.questions[this.state.counter];
